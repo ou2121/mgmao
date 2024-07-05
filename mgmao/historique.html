@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historique de l'Entreprise - T.V.E.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5;
+        }
+        .sidebar {
+            background-color: #2c3e50;
+            color: #ffffff;
+            height: 100vh;
+            padding-top: 20px;
+            position: fixed;
+            width: 250px;
+        }
+        .sidebar .nav-link {
+            color: #ffffff;
+            padding: 10px 15px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+        .sidebar .nav-link:hover {
+            background-color: #34495e;
+        }
+        .sidebar .nav-link i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .welcome-header {
+            text-align: center;
+            padding: 15px 0;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .welcome-header h1 {
+            color: #4a90e2;
+            font-size: 2.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+        .history-section {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .history-section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                position: static;
+                height: auto;
+            }
+            .main-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-2 d-none d-md-block sidebar">
+                <div class="sidebar-sticky">
+                     <div class="hamburger-icon">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-chart-line"></i> Tableau de bord</a></li>
+                        <li class="nav-item"><a class="nav-link" href="bus.php"><i class="fas fa-bus"></i> Les Bus</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mècanècia.php"><i class="fas fa-users-cog"></i> Les Mécaniciens</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Demand_d'intervention.php"><i class="fas fa-tools"></i> Demandes d'intervention</a></li>
+                        <li class="nav-item"><a class="nav-link" href="bondetravail.php"><i class="fas fa-file-alt"></i> Bons de Travail</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mp.php"><i class="fas fa-wrench"></i> Maintenance Préventive</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="historique.html"><i class="fas fa-history"></i> Historique</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main content -->
+            <main role="main" class="col-md-10 ml-sm-auto col-lg-10 px-4 main-content">
+                <div class="welcome-header">
+                    <h1>HISTORIQUE DE L'ENTREPRISE</h1>
+                </div>
+                
+                <div class="history-section">
+                    <h2>Présentation de T.V.E.</h2>
+                    <p>T.V.E. est une Entreprise Publique, issue de la restructuration de l'ex. S.N.T.V., créée sous forme de S.P.A. en mars 1989. Son capital social actuel s'élève à 370 Millions de dinars.</p>
+                </div>
+
+                <div class="history-section">
+                    <h2>Structure et Implantation</h2>
+                    <p>Le patrimoine de l'Entreprise T.V.E., outre le siège de la Direction Générale situé à Constantine, est constitué de trois unités de production, implantées à :</p>
+                    <ul>
+                        <li>Skikda</li>
+                        <li>Sétif</li>
+                        <li>Biskra</li>
+                    </ul>
+                </div>
+
+                <div class="history-section">
+                    <h2>Activité Principale</h2>
+                    <p>L'activité essentielle de T.V.E. est le transport de voyageurs par route. L'Entreprise couvre vingt-trois Wilayas du pays et transporte neuf à douze Millions de voyageurs par an, sur un réseau routier de plus de 09 Millions de Kms, avec un parc circulant récent de cent-trente-cinq véhicules.</p>
+                </div>
+
+                <div class="history-section">
+                    <h2>Service de Maintenance</h2>
+                    <p>Le service de la Maintenance de l'unité est chargé, principalement des attributions suivantes :</p>
+                    <ul>
+                        <li>Assurer la préservation du parc d'exploitation par la mise en place d'un programme d'entretien préventif et d'entretien curatif.</li>
+                        <li>Veiller à la disponibilité de la pièce de rechange nécessaire à l'entretien du parc d'exploitation.</li>
+                        <li>Assurer une large prospection pour l'approvisionnement en pièces de rechanges et organes de qualité à un coût normal.</li>
+                        <li>Assurer une gestion des stocks, conformément à la réglementation en vigueur.</li>
+                        <li>Respect des clauses des Contrats concernant les véhicules en période de garantie.</li>
+                    </ul>
+                </div>
+
+                <div class="history-section">
+                    <h2>Tâches de la Section Techno-Administrative</h2>
+                    <ul>
+                        <li>Rapport d'atelier quotidien à la direction</li>
+                        <li>Situation de parc quotidien autorisé à la direction</li>
